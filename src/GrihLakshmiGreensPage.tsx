@@ -37,22 +37,22 @@ const GrihLakshmiGreensPage: React.FC = () => {
       <section className="py-24 md:py-32 bg-white dark:bg-black">
         <div className="container mx-auto px-6">
            <Reveal className="max-w-7xl mx-auto text-center mb-24">
-             <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-emerald-950 dark:text-white uppercase tracking-tighter mb-8 whitespace-nowrap">Rapid <span className="text-emerald-600 italic lowercase">Growth</span> Corridor.</h3>
+             <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-emerald-950 dark:text-white uppercase tracking-tighter mb-8 md:whitespace-nowrap">Rapid <span className="text-emerald-600 italic lowercase">Growth</span> Corridor.</h3>
              <p className="text-emerald-800/60 dark:text-emerald-200/40 text-lg md:text-xl font-medium leading-relaxed italic">"A fusion of cultural heritage and smart city infrastructure, designed for the modern investor."</p>
            </Reveal>
            
            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Reveal delay={100} className="p-12 bg-emerald-50 dark:bg-neutral-900 rounded-[3rem] border border-emerald-100 dark:border-neutral-800 text-center">
-                 <p className="text-emerald-600 text-5xl font-black mb-4 tracking-tighter whitespace-nowrap">₹ 6.4L+</p>
-                 <p className="text-[10px] font-black uppercase tracking-widest text-emerald-950 dark:text-white/60 whitespace-nowrap">Starting Value</p>
+                 <p className="text-emerald-600 text-5xl font-black mb-4 tracking-tighter md:whitespace-nowrap">₹ 6.4L+</p>
+                 <p className="text-[10px] font-black uppercase tracking-widest text-emerald-950 dark:text-white/60 md:whitespace-nowrap">Starting Value</p>
               </Reveal>
               <Reveal delay={200} className="p-12 bg-emerald-600 text-white rounded-[3rem] shadow-xl text-center">
-                 <p className="text-5xl font-black mb-4 tracking-tighter whitespace-nowrap">100%</p>
-                 <p className="text-[10px] font-black uppercase tracking-widest opacity-80 whitespace-nowrap">Govt Approved</p>
+                 <p className="text-5xl font-black mb-4 tracking-tighter md:whitespace-nowrap">100%</p>
+                 <p className="text-[10px] font-black uppercase tracking-widest opacity-80 md:whitespace-nowrap">Govt Approved</p>
               </Reveal>
               <Reveal delay={300} className="p-12 bg-emerald-50 dark:bg-neutral-900 rounded-[3rem] border border-emerald-100 dark:border-neutral-800 text-center">
-                 <p className="text-emerald-600 text-5xl font-black mb-4 tracking-tighter whitespace-nowrap">15 Min</p>
-                 <p className="text-[10px] font-black uppercase tracking-widest text-emerald-950 dark:text-white/60 whitespace-nowrap">To Smart City Hub</p>
+                 <p className="text-emerald-600 text-5xl font-black mb-4 tracking-tighter md:whitespace-nowrap">15 Min</p>
+                 <p className="text-[10px] font-black uppercase tracking-widest text-emerald-950 dark:text-white/60 md:whitespace-nowrap">To Smart City Hub</p>
               </Reveal>
            </div>
         </div>
@@ -63,7 +63,7 @@ const GrihLakshmiGreensPage: React.FC = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <Reveal direction="right">
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight mb-12 whitespace-nowrap">Institutional Grade <span className="text-emerald-400 italic">Infrastructure.</span></h3>
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight mb-12 md:whitespace-nowrap">Institutional Grade <span className="text-emerald-400 italic">Infrastructure.</span></h3>
               <ul className="space-y-8">
                 {[
                   "Planned Eco-Friendly Street Lighting",
@@ -76,7 +76,7 @@ const GrihLakshmiGreensPage: React.FC = () => {
                     <div className="w-8 h-8 rounded-xl bg-emerald-500/20 flex items-center justify-center flex-shrink-0 text-emerald-400">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
                     </div>
-                    <span className="text-lg md:text-xl font-medium tracking-tight text-emerald-100/80 whitespace-nowrap">{item}</span>
+                    <span className="text-lg md:text-xl font-medium tracking-tight text-emerald-100/80">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -94,17 +94,17 @@ const GrihLakshmiGreensPage: React.FC = () => {
       <section className="py-24 md:py-40 bg-white dark:bg-black">
         <div className="container mx-auto px-6 text-center">
           <Reveal>
-            <h3 className="text-4xl md:text-5xl lg:text-6xl font-black text-emerald-950 dark:text-white uppercase tracking-tighter mb-12 whitespace-nowrap">Ready to <span className="text-emerald-600">Invest?</span></h3>
+            <h3 className="text-4xl md:text-5xl lg:text-6xl font-black text-emerald-950 dark:text-white uppercase tracking-tighter mb-12 md:whitespace-nowrap">Ready to <span className="text-emerald-600">Invest?</span></h3>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <button 
                 onClick={() => window.location.hash = '#/contact'} 
-                className="green-gradient text-white px-20 py-7 rounded-full font-black uppercase tracking-[0.4em] text-[11px] shadow-2xl transition-all active:scale-95 whitespace-nowrap"
+                className="green-gradient text-white px-20 py-7 rounded-full font-black uppercase tracking-[0.4em] text-[11px] shadow-2xl transition-all active:scale-95 md:whitespace-nowrap"
               >
                 Book Your Plot
               </button>
               <button 
                 onClick={() => window.location.hash = '#/about'} 
-                className="px-20 py-7 rounded-full bg-emerald-50 dark:bg-neutral-900 text-emerald-700 dark:text-emerald-400 font-black uppercase tracking-[0.4em] text-[11px] border border-emerald-100 dark:border-neutral-800 transition-all whitespace-nowrap"
+                className="px-20 py-7 rounded-full bg-emerald-50 dark:bg-neutral-900 text-emerald-700 dark:text-emerald-400 font-black uppercase tracking-[0.4em] text-[11px] border border-emerald-100 dark:border-neutral-800 transition-all md:whitespace-nowrap"
               >
                 View History
               </button>

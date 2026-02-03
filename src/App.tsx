@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Testimonials from './components/Testimonials';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -190,7 +190,7 @@ const Home: React.FC = () => {
                   </div>
                   <div className="p-10 flex-grow flex flex-col">
                     <p className="text-emerald-900/60 dark:text-emerald-100/40 text-sm font-medium leading-relaxed italic mb-10 line-clamp-3">"{founder.shortDesc}"</p>
-                    <button onClick={() => window.location.hash = `#/founder/${founder.slug}`} className="mt-auto w-full py-4 rounded-2xl bg-white dark:bg-black border border-emerald-100 dark:border-neutral-800 text-emerald-700 dark:text-emerald-400 text-[10px] font-black uppercase tracking-widest hover:bg-emerald-600 hover:text-white transition-all">Read More</button>
+                    <Link to={`/founder/${founder.slug}`} className="mt-auto w-full py-4 rounded-2xl bg-white dark:bg-black border border-emerald-100 dark:border-neutral-800 text-emerald-700 dark:text-emerald-400 text-[10px] font-black uppercase tracking-widest hover:bg-emerald-600 hover:text-white transition-all text-center">Read More</Link>
                   </div>
                 </div>
               </Reveal>

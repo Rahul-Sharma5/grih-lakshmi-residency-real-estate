@@ -38,16 +38,16 @@ const GrihLakshmiResidencyPage: React.FC = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <Reveal direction="right">
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-emerald-950 dark:text-white uppercase tracking-tighter mb-8 leading-tight whitespace-nowrap">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-emerald-950 dark:text-white uppercase tracking-tighter mb-8 leading-tight md:whitespace-nowrap">
                 Smart City <span className="text-emerald-600">Growth Axis.</span>
               </h3>
               <div className="space-y-10">
                 <div className="p-8 bg-emerald-50 dark:bg-neutral-900 rounded-[2.5rem] border border-emerald-100 dark:border-neutral-800">
-                  <h3 className="text-xl font-black text-emerald-950 dark:text-white uppercase mb-4 tracking-tight whitespace-nowrap">Prime Connectivity</h3>
+                  <h3 className="text-xl font-black text-emerald-950 dark:text-white uppercase mb-4 tracking-tight md:whitespace-nowrap">Prime Connectivity</h3>
                   <p className="text-emerald-900/60 dark:text-emerald-100/40 leading-relaxed">Strategically situated within the Jaipur-Sambhar corridor, offering seamless access to the Dedicated Freight Corridor and future high-speed rail nodes.</p>
                 </div>
                 <div className="p-8 bg-emerald-600 text-white rounded-[2.5rem] shadow-xl">
-                  <h3 className="text-xl font-black uppercase mb-4 tracking-tight whitespace-nowrap">48% Appreciation</h3>
+                  <h3 className="text-xl font-black uppercase mb-4 tracking-tight md:whitespace-nowrap">48% Appreciation</h3>
                   <p className="opacity-80 leading-relaxed">Proven track record of growth over the last 18 months, outperforming traditional market benchmarks in the region.</p>
                 </div>
               </div>
@@ -58,8 +58,8 @@ const GrihLakshmiResidencyPage: React.FC = () => {
               </div>
               <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-white dark:bg-neutral-900 rounded-full border-8 border-emerald-50 dark:border-black flex items-center justify-center shadow-2xl">
                 <div className="text-center">
-                   <p className="text-emerald-600 text-4xl font-black italic tracking-tighter whitespace-nowrap">GLR</p>
-                   <p className="text-[9px] font-black uppercase tracking-widest text-emerald-900/40 whitespace-nowrap">Registered</p>
+                   <p className="text-emerald-600 text-4xl font-black italic tracking-tighter md:whitespace-nowrap">GLR</p>
+                   <p className="text-[9px] font-black uppercase tracking-widest text-emerald-900/40 md:whitespace-nowrap">Registered</p>
                 </div>
               </div>
             </Reveal>
@@ -71,8 +71,8 @@ const GrihLakshmiResidencyPage: React.FC = () => {
       <section className="py-24 bg-emerald-50/30 dark:bg-neutral-950">
         <div className="container mx-auto px-6 text-center">
           <Reveal className="mb-20">
-            <span className="text-emerald-600 dark:text-emerald-400 font-black text-[10px] uppercase tracking-[0.5em] block mb-4 whitespace-nowrap">Quality Living</span>
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-emerald-950 dark:text-white uppercase tracking-tighter whitespace-nowrap">Township Features</h3>
+            <span className="text-emerald-600 dark:text-emerald-400 font-black text-[10px] uppercase tracking-[0.5em] block mb-4 md:whitespace-nowrap">Quality Living</span>
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-emerald-950 dark:text-white uppercase tracking-tighter md:whitespace-nowrap">Township Features</h3>
           </Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
@@ -85,7 +85,7 @@ const GrihLakshmiResidencyPage: React.FC = () => {
                 <div className="w-14 h-14 bg-emerald-50 dark:bg-emerald-950 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d={feat.icon}/></svg>
                 </div>
-                <h3 className="text-xl font-black text-emerald-950 dark:text-white uppercase tracking-tight whitespace-nowrap">{feat.title}</h3>
+                <h3 className="text-xl font-black text-emerald-950 dark:text-white uppercase tracking-tight md:whitespace-nowrap">{feat.title}</h3>
               </Reveal>
             ))}
           </div>
@@ -98,11 +98,11 @@ const GrihLakshmiResidencyPage: React.FC = () => {
           <div className="max-w-4xl mx-auto bg-emerald-950 rounded-[4rem] p-12 md:p-20 text-center relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2"></div>
             <Reveal className="relative z-10">
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-8 whitespace-nowrap">Secure Your <span className="text-emerald-400 italic">Legacy.</span></h3>
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-8 md:whitespace-nowrap">Secure Your <span className="text-emerald-400 italic">Legacy.</span></h3>
               <p className="text-emerald-100/60 text-lg md:text-xl font-medium mb-12 max-w-2xl mx-auto">Limited units available at pre-launch pricing. Schedule an on-ground site visit with our experts today.</p>
               <button 
                 onClick={() => window.location.hash = '#/contact'} 
-                className="green-gradient text-white px-16 py-6 rounded-full font-black uppercase tracking-[0.3em] text-[11px] shadow-2xl transition-all active:scale-95 whitespace-nowrap"
+                className="green-gradient text-white px-16 py-6 rounded-full font-black uppercase tracking-[0.3em] text-[11px] shadow-2xl transition-all active:scale-95 md:whitespace-nowrap"
               >
                 Request Allotment
               </button>

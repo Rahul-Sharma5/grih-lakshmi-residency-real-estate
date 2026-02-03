@@ -75,7 +75,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           </div>
         </div>
 
-        <nav className={`w-full transition-all duration-500 ${isSolid ? 'bg-white/80 dark:bg-black/80 backdrop-blur-lg py-4 shadow-2xl border-b border-emerald-100 dark:border-neutral-800' : 'bg-transparent py-6'}`}>
+        <nav className={`w-full transition-all duration-500 ${isSolid ? 'bg-white/80 dark:bg-black/80 backdrop-blur-lg py-4 border-b border-emerald-100 dark:border-neutral-800' : 'bg-transparent py-6'}`}>
           <div className="container mx-auto px-4 sm:px-6 flex justify-between items-center">
             <Link to="/" className="flex items-center space-x-3 cursor-pointer group z-[220]" onClick={() => setIsMobileMenuOpen(false)}>
               <div className="w-10 h-10 md:w-12 md:h-12 green-gradient flex items-center justify-center rounded-2xl transition-all group-hover:scale-110 shadow-xl border border-white/20">
