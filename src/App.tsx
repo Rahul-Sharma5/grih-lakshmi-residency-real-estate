@@ -206,6 +206,7 @@ const Home: React.FC = () => {
 
 const App: React.FC = () => {
   const location = useLocation();
+  const currentYear = new Date().getFullYear();
 
   const handleNavigate = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
@@ -358,7 +359,7 @@ const App: React.FC = () => {
           <div className="pt-10 flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
               <div className="px-4 py-2 border border-emerald-500/30 rounded-xl bg-emerald-500/5"><p className="text-[10px] font-black uppercase tracking-[0.3em] text-emerald-400 md:whitespace-nowrap">RERA Registered</p></div>
-              <p className="text-[9px] font-black uppercase tracking-[0.2em] text-white/20 text-center md:text-left md:whitespace-nowrap">© 2024 Grih & Lakshmi Residency. All Architectural Renderings are indicative.</p>
+              <p className="text-[9px] font-black uppercase tracking-[0.2em] text-white/20 text-center md:text-left md:whitespace-nowrap">© {currentYear} Grih & Lakshmi Residency. All Architectural Renderings are indicative.</p>
             </div>
             <div className="flex space-x-10 text-[9px] font-black uppercase tracking-[0.3em] text-white/20 md:whitespace-nowrap">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

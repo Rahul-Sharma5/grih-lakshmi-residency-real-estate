@@ -12,6 +12,7 @@ const Navbar: React.FC<NavbarProps> = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const location = useLocation();
+  const currentYear = new Date().getFullYear();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -195,7 +196,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                 className="py-8 px-6 border-t border-emerald-100 dark:border-neutral-800"
               >
                 <a href="tel:+919711263000" className="block text-center text-2xl font-black text-emerald-700 dark:text-emerald-400">+91 97112 63000</a>
-                <p className="text-center text-[10px] font-black uppercase tracking-[0.3em] text-emerald-950/20 dark:text-white/10 mt-4">© 2024 Grih & Lakshmi Residency</p>
+                <p className="text-center text-[10px] font-black uppercase tracking-[0.3em] text-emerald-950/20 dark:text-white/10 mt-4">© {currentYear} Grih & Lakshmi Residency</p>
               </motion.div>
             </motion.div>
           </motion.div>
