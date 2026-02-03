@@ -1,0 +1,7 @@
+{
+  "name": "Grih & Lakshmi Residency - Premium Real Estate",
+  "description": "A luxury investor-focused real-estate platform for Indian markets, featuring smart city highlights, industrial corridor insights, and heritage-rich developments.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
